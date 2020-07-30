@@ -1,0 +1,30 @@
+.advantage {
+  position: relative;
+  z-index: 0;
+  padding: 56px 0 105px;
+  background-color: #fff;
+
+  // .advantage__title
+  &__title {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  // .advantage__plus
+  &__plus {
+    max-width: 250px;
+    text-align: center;
+
+    strong {
+      display: block;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    span {
+      font-size: 14px;
+      font-family: "PT Sans", sans-serif;
+    }
+  }
+}

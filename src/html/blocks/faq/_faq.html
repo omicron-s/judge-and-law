@@ -1,0 +1,10 @@
+<section class="faq">
+  @@include('../logo-mini/_logo-mini.html')
+  <div class="container">
+    <h3 class="faq__title title">Частые вопросы клиентов</h3>
+    <div class="faq__list">
+      @@loop('../../mixins/_faq-item.html', '../../data/faq-index.json')
+    </div>
+    <button class="btn btn--blue">Еще вопросы</button>
+  </div>
+</section>

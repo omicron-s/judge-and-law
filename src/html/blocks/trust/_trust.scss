@@ -1,0 +1,66 @@
+.trust {
+  position: relative;
+  padding: 33px 0 41px;
+  color: #fff;
+  background: linear-gradient(rgba(43, 89, 152, 0.65)),
+    url('../img/trust/bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: normal;
+
+  &__title {
+    margin-bottom: 37px;
+  }
+
+  // .trust__row
+  &__row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // .trust__skill
+  &__skill {
+    flex: 1 1 100%;
+    max-width: 250px;
+    margin-bottom: 40px;
+  }
+  // .trust__check
+  &__check {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 15px;
+    background-color: $beige;
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/icons/check.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      content: '';
+    }
+  }
+  // .trust__name
+  &__name {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+    line-height: 1.17;
+    text-align: center;
+  }
+  .btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.no-webp .trust {
+  background: linear-gradient(rgba(43, 89, 152, 0.65)),
+    url('../img/trust/bg.jpg');
+}

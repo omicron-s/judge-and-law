@@ -1,0 +1,13 @@
+<section class="requests-index">
+  @@include('../logo-mini/_logo-mini.html')
+  <div class="container">
+
+    <h3 class="requests-index__title title">Отзывы клиентов</h3>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        @@loop('../../mixins/_request.html','../../data/requests-index.json')
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>

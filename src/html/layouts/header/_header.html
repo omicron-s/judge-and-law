@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="container">
+    <div class="row">
+      @@include('../../blocks/logo/_logo.html')
+      <div class="header__row">
+        <div class="header__top">
+          <div>
+            <img src="img/icons/marker.svg" alt="Маркер">
+            <p>г.Москва, Институтский пер., 2/1<br>
+              Пн-Пт с 11.00 до 18.00</p>
+          </div>
+          <div>
+            <img src="img/icons/mail.svg" alt="Почта">
+            <p>info@суд-да-правда.рф</p>
+          </div>
+          <div>
+            <img src="img/icons/phone.svg" alt="Телефон">
+            <p>+7 (495) 681-12-17<br>
+              +7 (916) 320-42-42 </p>
+          </div>
+          <button class="btn">Заказать звонок</button>
+        </div>
+        <nav class="header__nav">
+          @@loop('../../mixins/_nav.html', '../../data/nav.json')
+        </nav>

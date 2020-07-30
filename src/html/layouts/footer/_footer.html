@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      @@include('../../blocks/logo/_logo.html')
+      <div class="footer__services">
+        <h4>Наши услуги</h4>
+      </div>
+      <ul class="footer__list list_1">
+        @@loop('../../mixins/_services.html', '../../data/services-list1.json')
+      </ul>
+      <ul class="footer__list list_2">
+        @@loop('../../mixins/_services.html', '../../data/services-list2.json')
+      </ul>
+      <nav class="footer__nav">
+        @@loop('../../mixins/_nav.html', '../../data/nav.json')
+      </nav>
+      <a href="#" class="footer__bottom">Политика обработки персональных данных</a>
+      <p class="footer__bottom">Разработка сайта web2.ru</p>
+    </div>
+  </div>
+</footer>

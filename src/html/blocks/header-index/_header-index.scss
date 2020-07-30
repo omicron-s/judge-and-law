@@ -1,0 +1,34 @@
+.header-main {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 207px;
+
+  // .header__img
+  &__img {
+    position: absolute;
+    top: -28%;
+    right: -15.9%;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+
+    svg {
+      position: absolute;
+      top: -57.8%;
+      left: -47%;
+      z-index: -1;
+      width: 328px;
+      user-select: none;
+      fill: $blue1;
+    }
+  }
+}
+
+.no-webp .header-main::before {
+  background-image: url('../img/header/img.png');
+}

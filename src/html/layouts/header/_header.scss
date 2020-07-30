@@ -1,0 +1,92 @@
+.header {
+  padding: 10px 0 0;
+  overflow: hidden;
+  color: #fff;
+  background-color: rgba(0, 59, 138, 0.9);
+  background-image: url('../img/header/bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-burn;
+
+  .logo {
+    margin-right: 60px;
+  }
+
+  // .header__row
+  &__row {
+    width: 100%;
+  }
+
+  // .header__top
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+
+    > div {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 20px;
+        margin-bottom: 5px;
+      }
+
+      img[alt='Почта'] {
+        margin-right: 12px;
+      }
+
+      img[alt='Телефон'] {
+        margin-right: 14px;
+      }
+
+      p {
+        margin: 0;
+        font-family: 'PT Serif', serif;
+        line-height: 1.35;
+      }
+    }
+    
+    .btn {
+      width: 185px;
+      height: 35px;
+      margin-left: 20px;
+    }
+  }
+
+  // .header__nav
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 32px 0 0;
+    font-size: 16px;
+    a {
+      z-index: 10;
+      margin: 0 -20px;
+      padding: 6px 20px 7px;
+      color: #fff;
+      border-radius: 50px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #000;
+        background-color: $beige;
+      }
+    }
+  }
+
+  // .header__title
+  &__title {
+  }
+}
+
+.no-webp .header {
+  background-image: url('../img/header/bg.jpg');
+}

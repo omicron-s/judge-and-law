@@ -1,0 +1,16 @@
+.requests-index {
+  background-color: $gray;
+  position: relative;
+  z-index: 0;
+  padding: 35px 0 40px;
+
+  .logo-mini {
+    top: -10px;
+    fill: #fff;
+  }
+  // .requests-index__title
+  &__title {
+    margin-bottom: 80px;
+  }
+}
+  

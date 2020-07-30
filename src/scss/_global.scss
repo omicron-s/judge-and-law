@@ -1,0 +1,86 @@
+body {
+  font-family: "PT Serif", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, button {
+  transition: 0.4s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, span {
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.row-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 250px;
+  height: 45px;
+  font-size: 14px;
+  background-color: $beige;
+  border: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover, &:active, &:focus {
+    background-color: #fff;
+  }
+
+  &--blue {
+    color: #fff;
+    background-color: $blue;
+
+    &:hover, &:active, &:focus {
+      color: darken(#fff, 10%);
+      background-color: darken($blue, 10%);
+    }
+  }
+}
+
+h1.title, h2.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+h2.title {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+h3.title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h4.title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.05;
+}

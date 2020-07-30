@@ -1,0 +1,39 @@
+.logo {
+  display: table;
+  z-index: 10;
+  width: min-content;
+
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+  fill: $beige;
+
+  &:hover {
+    color: $beige;
+    filter: drop-shadow(8px 8px 8px #000);
+    fill: darken($orange, 15%);
+  }
+  // .logo__brand
+  &__brand {
+    margin-bottom: 10px;
+  }
+
+  // .logo__name
+  &__name {
+    margin-bottom: 6px;
+  }
+
+  // .logo__desc
+  &__desc {
+    display: block;
+    margin: 0 -5px -2px;
+    font-size: 10px;
+    font-family: CormorantGaramond, Courier, monospace;
+    line-height: 1.4;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+  }
+  // .logo__footer
+  &__footer {
+  }
+}

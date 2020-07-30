@@ -1,0 +1,110 @@
+.cta {
+  position: relative;
+  z-index: 0;
+  padding: 34px 0;
+  // overflow: hidden;
+  color: #fff;
+  background-color: $gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+  }
+  .container {
+    position: relative;
+    max-width: $containerMaxWidth - 30px;
+    padding: 95px 0 90px;
+
+    background: linear-gradient(rgba(64, 64, 64, 0.5)), url("../img/cta/bg.webp"), $gray1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .free {
+    $cta-free-width: 250px;
+
+    .btn {
+      flex-grow: 1;
+      max-width: $cta-free-width;
+    }
+    // .free__form
+    &__form {
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 27px;
+    }
+    // .free__input
+    &__input {
+      flex-grow: 1;
+      max-width: $cta-free-width;
+      margin-right: 20px;
+    }
+    // .free__span
+    &__span {
+      display: block;
+      text-align: center;
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .cta__corner
+  &__corner {
+    display: block;
+    position: absolute;
+    top: -34px;
+    left: -26px;
+    width: 520px;
+    height: 13px;
+    background-color: $gray;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 13px;
+      height: 53px;
+      background-color: $gray;
+    }
+
+    // .cta__corner--right
+    &--right {
+      top: unset;
+      right: -26px;
+      bottom: -34px;
+      left: unset;
+      background-color: #fff;
+
+      &::before {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: 13px;
+        height: 53px;
+        background-color: #fff;
+      }
+    }
+  }
+    
+  // .cta__title
+  &__title {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+}
+
+
+
+  

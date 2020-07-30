@@ -1,0 +1,11 @@
+.logo-mini {
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 50%;
+  width: 230px;
+  transform: translate(-50%);
+  user-select: none;
+  pointer-events: none;
+  fill: $gray;
+}
