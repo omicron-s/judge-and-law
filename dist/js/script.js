@@ -142,7 +142,6 @@ testWebP(function (support) {
     return svg4everybody;
 });
 
-
 $(document).ready(function () {
   $('.faq__item').on('click', function () {
     $(this).find('p').slideToggle();
@@ -150,12 +149,3 @@ $(document).ready(function () {
   });
 });
 
-// import Swiper, { Pagination } from 'swiper';
-
-// Swiper.use([Pagination]);
-
-// var requestIndex = new Swiper('.swiper-container', {
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-// });

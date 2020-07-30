@@ -11,8 +11,7 @@
 @import "fonts";
 @import "variables";
 @import "../libs/bootstrap-4.5.0/scss/bootstrap-reboot";
-@import "../../node_modules/swiper/swiper";
-@import "../../node_modules/swiper/components/pagination/pagination";
+@import "../../node_modules/tiny-slider/src/tiny-slider.scss";
 // @import '../libs/smart-grid';
 @import "global";
 @import "../html/**/*";
