@@ -1,9 +1,9 @@
 .header {
-  padding: 10px 0 0;
   overflow: hidden;
+  padding: 10px 0 0;
   color: #fff;
   background-color: rgba(0, 59, 138, 0.9);
-  background-image: url('../img/header/bg.webp');
+  background-image: url("../img/header/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-burn;
@@ -36,17 +36,17 @@
         margin-bottom: 5px;
       }
 
-      img[alt='Почта'] {
+      img[alt="\41F\43E\447\442\430"] {
         margin-right: 12px;
       }
 
-      img[alt='Телефон'] {
+      img[alt="\422\435\43B\435\444\43E\43D"] {
         margin-right: 14px;
       }
 
       p {
         margin: 0;
-        font-family: 'PT Serif', serif;
+        font-family: "PT Serif", serif;
         line-height: 1.35;
       }
     }
@@ -63,8 +63,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
     padding: 32px 0 0;
+    margin-bottom: 70px;
     font-size: 16px;
     a {
       z-index: 10;
@@ -73,9 +73,7 @@
       color: #fff;
       border-radius: 50px;
 
-      &:hover,
-      &:focus,
-      &:active {
+      &:hover, &:focus, &:active {
         color: #000;
         background-color: $beige;
       }
@@ -88,5 +86,5 @@
 }
 
 .no-webp .header {
-  background-image: url('../img/header/bg.jpg');
+  background-image: url("../img/header/bg.jpg");
 }

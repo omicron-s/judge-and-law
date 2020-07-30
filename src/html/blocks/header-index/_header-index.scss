@@ -2,7 +2,6 @@
   position: relative;
   z-index: 0;
   padding-bottom: 207px;
-  background-image: url("../img/header/img.webp");
 
   .title {
     position: relative;
@@ -28,8 +27,4 @@
     user-select: none;
     pointer-events: none;
   }
-}
-
-.no-webp .header-main::before {
-  background-image: url("../img/header/img.png");
 }
