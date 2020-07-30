@@ -961,7 +961,6 @@ h4.title {
 
 .advantage__plus span {
   font-size: 14px;
-  font-family: "PT Sans", sans-serif;
 }
 
 .cta {
@@ -1220,7 +1219,6 @@ h4.title {
 .free__span {
   margin: 0 0 23px;
   font-size: 12px;
-  font-family: "PT Sans", sans-serif;
   line-height: 1.3;
 }
 
@@ -1234,6 +1232,25 @@ h4.title {
   padding-bottom: 207px;
 }
 
+.header-main .title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 70px;
+}
+
+.header-main .title svg {
+  position: absolute;
+  z-index: -1;
+  top: -57.8%;
+  left: -47%;
+  width: 328px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  fill: #2b5998;
+}
+
 .header-main__img {
   position: absolute;
   top: -28%;
@@ -1243,29 +1260,6 @@ h4.title {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
-}
-
-.header-main .title {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 70px;
-}
-
-.header-main .title svg {
-  position: absolute;
-  top: -57.8%;
-  left: -47%;
-  z-index: -1;
-  width: 328px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  fill: #2b5998;
-}
-
-.no-webp .header-main::before {
-  background-image: url("../img/header/img.png");
 }
 
 .logo-mini {
@@ -1739,8 +1733,8 @@ h4.title {
 }
 
 .header {
-  padding: 10px 0 0;
   overflow: hidden;
+  padding: 10px 0 0;
   color: #fff;
   background-color: rgba(0, 59, 138, 0.9);
   background-image: url("../img/header/bg.webp");
@@ -1788,17 +1782,17 @@ h4.title {
   margin-bottom: 5px;
 }
 
-.header__top > div img[alt='Почта'] {
+.header__top > div img[alt="Почта"] {
   margin-right: 12px;
 }
 
-.header__top > div img[alt='Телефон'] {
+.header__top > div img[alt="Телефон"] {
   margin-right: 14px;
 }
 
 .header__top > div p {
   margin: 0;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   line-height: 1.35;
 }
 
@@ -1817,8 +1811,8 @@ h4.title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 70px;
   padding: 32px 0 0;
+  margin-bottom: 70px;
   font-size: 16px;
 }
 
