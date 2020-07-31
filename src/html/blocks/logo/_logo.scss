@@ -1,9 +1,15 @@
-.logo {
-  display: table;
-  z-index: 10;
-  width: min-content;
+.logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
 
-  padding: 5px;
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  padding: 5px 0;
   color: #fff;
   text-align: center;
   fill: $beige;
@@ -25,8 +31,9 @@
 
   // .logo__desc
   &__desc {
-    display: block;
-    margin: 0 -5px -2px;
+    display: inline-block;
+    width: 270px;
+    margin: 0 -5px 7px;
     font-size: 10px;
     font-family: CormorantGaramond, Courier, monospace;
     line-height: 1.4;

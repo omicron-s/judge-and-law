@@ -1,25 +1,15 @@
-<header class="header">
+<header id="header" class="header">
   <div class="container">
     <div class="row">
       @@include('../../blocks/logo/_logo.html')
       <div class="header__row">
         <div class="header__top">
-          <div>
-            <img src="img/icons/marker.svg" alt="Marker">
-            <p>г.Москва, Институтский пер., 2/1<br>
-              Пн-Пт с 11.00 до 18.00</p>
-          </div>
-          <div>
-            <img src="img/icons/mail.svg" alt="Mail">
-            <p>info@суд-да-правда.рф</p>
-          </div>
-          <div>
-            <img src="img/icons/phone.svg" alt="Phone">
-            <p>+7 (495) 681-12-17<br>
-              +7 (916) 320-42-42 </p>
-          </div>
-          <button class="btn">Заказать звонок</button>
+          @@include('../../mixins/_contacts-list.html', {
+          "text": "г.Москва, Институтский пер., 2/1<br>Пн-Пт с 11.00 до 18.00"
+          }')
         </div>
         <nav class="header__nav">
-          @@loop('../../mixins/_nav.html', '../../data/nav.json')
+          @@loop('../../mixins/_nav-header.html', '../../data/nav.json')
         </nav>
+      </div>
+    </div>

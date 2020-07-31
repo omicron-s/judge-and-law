@@ -21,9 +21,7 @@ p, span {
 }
 
 .container {
-  max-width: $containerMaxWidth;
-  margin: 0 auto;
-  padding: 0 15px;
+  @include wrapper();
 }
 
 .row {

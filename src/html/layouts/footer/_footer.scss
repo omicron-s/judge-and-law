@@ -3,7 +3,7 @@
   color: #fff;
   font-size: 18px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 50%),
-    url('../img/footer/bg.webp');
+    url("../img/footer/bg.webp");
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: left;
@@ -11,16 +11,14 @@
   a:not(.logo) {
     color: #fff;
 
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover, &:focus, &:active {
       color: $beige;
     }
   }
 
-  .logo {
-    grid-area: logo;
+  .logo-wrapper {
     align-self: center;
+    grid-area: logo;
     justify-self: start;
   }
 
@@ -28,9 +26,9 @@
   &__grid {
     display: grid;
     grid-template-areas:
-      'logo serv serv nav'
-      'logo list1 list2 nav'
-      'logo poli poli copy';
+      "logo serv serv nav"
+      "logo list1 list2 nav"
+      "logo poli poli copy";
     grid-template-rows: 28px auto auto;
     grid-template-columns: 32% 16% 27% auto;
   }
@@ -50,7 +48,7 @@
   &__list {
     padding-top: 12px;
     font-size: 14px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
 
     &.list_1 {
       grid-area: list1;
@@ -80,7 +78,7 @@
     align-self: flex-end;
     padding-top: 18px;
     font-size: 14px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
   }
 
   a.footer__bottom {
@@ -97,6 +95,6 @@
 
 .no-webp {
   .footer::before {
-    background-image: url('../img/footer/bg.jpg');
+    background-image: url("../img/footer/bg.jpg");
   }
 }

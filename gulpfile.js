@@ -215,9 +215,6 @@ function otf2ttf() {
     )
     .pipe(dest(source_folder + '/fonts/'));
 }
-gulp.task('smartgrid', function () {
-  return smartgrid(path.src.libs, settings);
-});
 
 function fontsStyle(params) {
   let file_content = fs.readFileSync(source_folder + '/scss/_fonts.scss');
@@ -260,14 +257,17 @@ function clean(params) {
   return del(path.clean);
 }
 
+gulp.task('smartgrid', function () {
+  return smartgrid(source_folder + '/scss', settings);
+});
 var settings = {
   outputStyle: 'scss' /* less || scss || sass || styl */,
   columns: 12 /* number of grid columns */,
   offset: '30px' /* gutter width px || % || rem */,
   mobileFirst: false /* mobileFirst ? 'min-width' : 'max-width' */,
   container: {
-    maxWidth: '1200px' /* max-width оn very large screen */,
-    fields: '30px' /* side fields */,
+    maxWidth: '1320px' /* max-width оn very large screen */,
+    fields: '15px' /* side fields */,
   },
   breakPoints: {
     lg: {
@@ -278,8 +278,6 @@ var settings = {
     },
     sm: {
       width: '780px',
-      fields:
-        '15px' /* set fields only if you want to change container.fields */,
     },
     xs: {
       width: '560px',

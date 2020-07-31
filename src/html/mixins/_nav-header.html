@@ -1,0 +1,12 @@
+@@if (context.class !== '' ) {
+<div @@class>@@name
+  <svg viewBox="0 0 9 6">
+    <use href="img/svg/icons.svg#icon-dawn" />
+  </svg>
+  <ul class="header__dropdown">
+    @@loop('_services.html', '../../data/services-list1.json')
+    @@loop('_services.html', '../../data/services-list2.json')
+  </ul>
+</div>
+}
+@@if (context.class === '' ) { <a @@class href="@@link">@@name</a>}

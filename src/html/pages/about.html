@@ -4,26 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная - Суд да Правда</title>
+  <title>О компании - Суд да Правда</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   @@include('../layouts/header/_header.html')
 
-  @@include('../blocks/header-main/_header-main.html')
+  @@include('../blocks/header-about/_header-about.html')
 
   <main>
-    @@include('../blocks/services/_services.html')
-    @@include('../blocks/trust/_trust.html')
     @@include('../blocks/advantage/_advantage.html')
-    @@include('../blocks/stuff/_stuff.html')
-    @@include('../blocks/faq/_faq.html')
-    <section>
+    @@include('../blocks/trust/_trust.html')
+    <section class="cta-about">
       @@include('../blocks/cta/_cta.html')
     </section>
-    @@include('../blocks/requests-index/_requests-index.html')
-    @@include('../blocks/contacts/_contacts.html')
   </main>
 
   @@include('../layouts/footer/_footer.html')
