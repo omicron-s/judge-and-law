@@ -1,8 +1,8 @@
-.request {
+.responsive {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  // .request__avatar
+  // .responsive__avatar
   &__avatar {
     display: flex;
     flex: 0 0 53px;
@@ -18,21 +18,21 @@
       margin-bottom: -1px;
     }
   }
-  // .request__col
+  // .responsive__col
   &__col {
     max-width: 740px;
   }
-  // .request__col-name
+  // .responsive__col-name
   &__col-name {
     margin: 0;
   }
-  // .request__col-prof
+  // .responsive__col-prof
   &__col-prof {
     color: $blue3;
     margin-bottom: 15px;
     display: inline-block;
   }
-  // .request__col-text
+  // .responsive__col-text
   &__col-text {
   }
 }

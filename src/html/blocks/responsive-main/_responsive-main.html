@@ -1,0 +1,12 @@
+<section class="responsive-main">
+  @@include('../logo-mini/_logo-mini.html')
+  <div class="container">
+    <h2 class="responsive-main__title title-h3">Отзывы клиентов</h2>
+    <div>
+      <div>
+        @@loop('../../mixins/_responsive.html','../../data/responsive-main.json')
+      </div>
+      <div></div>
+    </div>
+  </div>
+</section>

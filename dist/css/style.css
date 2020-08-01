@@ -629,14 +629,15 @@ h2.title {
   font-size: 35px;
 }
 
-h3.title {
+h2.title-h3 {
   font-weight: 400;
   font-size: 25px;
   line-height: 1.3;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
-h4.title {
+strong.title {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.05;
@@ -644,7 +645,6 @@ h4.title {
 
 .advantage {
   position: relative;
-  z-index: 0;
   padding: 60px 0 110px;
   background-color: #fff;
 }
@@ -979,6 +979,7 @@ h4.title {
   font-weight: 400;
   font-size: 25px;
   text-transform: uppercase;
+  font-family: "PT Serif", serif;
 }
 
 .free__desc {
@@ -1200,7 +1201,23 @@ h4.title {
   text-transform: uppercase;
 }
 
-.request {
+.responsive-main {
+  background-color: #e5e5e5;
+  position: relative;
+  z-index: 0;
+  padding: 35px 0 40px;
+}
+
+.responsive-main .logo-mini {
+  top: -10px;
+  fill: #fff;
+}
+
+.responsive-main__title {
+  margin-bottom: 80px;
+}
+
+.responsive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1210,7 +1227,7 @@ h4.title {
   font-size: 14px;
 }
 
-.request__avatar {
+.responsive__avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1230,38 +1247,22 @@ h4.title {
   margin-right: 40px;
 }
 
-.request__avatar img {
+.responsive__avatar img {
   margin-bottom: -1px;
 }
 
-.request__col {
+.responsive__col {
   max-width: 740px;
 }
 
-.request__col-name {
+.responsive__col-name {
   margin: 0;
 }
 
-.request__col-prof {
+.responsive__col-prof {
   color: #416daa;
   margin-bottom: 15px;
   display: inline-block;
-}
-
-.requests-index {
-  background-color: #e5e5e5;
-  position: relative;
-  z-index: 0;
-  padding: 35px 0 40px;
-}
-
-.requests-index .logo-mini {
-  top: -10px;
-  fill: #fff;
-}
-
-.requests-index__title {
-  margin-bottom: 80px;
 }
 
 .services {
