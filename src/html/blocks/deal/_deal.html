@@ -1,0 +1,21 @@
+<div class="deal">
+  <div class="container">
+    <div class="row">
+      <div class="deal__img">
+        <div class="services__card-logo">
+          <svg width="82" height="55">
+            <use href="img/svg/logo.svg#logo-mini" />
+            <use href="img/svg/logo.svg#logo-abbr" />
+          </svg>
+        </div>
+        @@loop('_img.html','../../data/cases.json')
+      </div>
+      <div class="deal__text">
+        @@loop('_text.html','../../data/cases.json')
+        <a href="case.html"><svg viewBox="0 0 9 6">
+            <use href="img/svg/icons.svg#icon-dawn" />
+          </svg> Назад к кейсам</a>
+      </div>
+    </div>
+  </div>
+</div>

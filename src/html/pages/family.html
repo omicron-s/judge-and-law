@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Семейные споры - Суд да Правда</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  @@include('../layouts/header/_header.html')
+
+  @@include('../blocks/header-service/_header-service.html')
+
+  <main>
+    @@include('../blocks/service-family/_service-family.html')
+    @@include('../blocks/service-cases/_service-cases.html')
+    @@include('../blocks/trust/_trust.html')
+    @@include('../blocks/advantage/_advantage.html')
+    @@include('../blocks/stuff/_stuff.html')
+    @@include('../blocks/faq/_faq.html')
+    <section>
+      @@include('../blocks/cta/_cta.html')
+    </section>
+    @@include('../blocks/responsive-main/_responsive-main.html')
+    @@include('../blocks/contacts/_contacts.html')
+  </main>
+
+  @@include('../layouts/footer/_footer.html')
+  <script src="js/script.min.js"></script>
+  <script>svg4everybody();</script>
+</body>
+
+</html>

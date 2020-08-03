@@ -1,0 +1,8 @@
+.header-qa {
+  padding-bottom: 106px;
+
+  &__row {
+    @include col();
+    @include shift-left(3);
+  }
+}

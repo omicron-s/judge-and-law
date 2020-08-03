@@ -52,18 +52,25 @@
         height: 15px;
         transition: .4s;
       }
+      
       &.active::after {
         height: 0;
       }
     }
 
-    h4 {
-      margin-bottom: 1em;
-    }
-
-    p {
-      font-size: 14px;
+    .faq__hidden {
       display: none;
+      p {
+        margin-top: 1em;
+        font-size: 14px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      b:not(:first-child) {
+        display: block;
+        margin-top: 25px;
+      }
     }
   }
 }

@@ -19,6 +19,12 @@
     background-color: #fff;
     box-shadow: 0 20px 28px rgba(91, 86, 86, 0.12);
 
+    span {
+      color: $blue;
+      font-size: 12px;
+      padding: 5px 0;
+    }
+
     a {
       align-self: end;
       color: $blue;

@@ -1,0 +1,10 @@
+<section class="service-cases">
+  @@include('../logo-mini/_logo-mini.html')
+  <div class="container">
+    <h2 class="service-cases__title title-h3">Судебная практика, кейсы</h2>
+    <div class="services__grid">
+      @@loop('../../mixins/_service-cases-card.html','../../data/cases.json')
+    </div>
+    <a href="#" class="btn btn--blue">Больше кейсов</a>
+  </div>
+</section>

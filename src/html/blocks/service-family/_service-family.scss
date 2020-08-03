@@ -1,0 +1,22 @@
+.service-family {
+  padding: 35px 0 20px;
+  .row {
+    @include row-flex();
+  }
+  .logo-wrapper {
+    @include col();
+    @include size(3);
+
+    .logo {
+      color: #000;
+    }
+  }
+  // .service-family__text
+  &__text {
+    @include col();
+    @include size(9);
+    font-size: 14px;
+  }
+}
+
+  

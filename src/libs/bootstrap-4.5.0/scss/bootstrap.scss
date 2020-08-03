@@ -6,10 +6,10 @@
  */
 
 @import "functions";
-// @import "variables";
+@import "variables";
 @import "mixins";
 // @import "root";
-// @import 'reboot';
+@import "reboot";
 // @import "type";
 // @import "images";
 // @import "code";
@@ -18,7 +18,7 @@
 // @import "forms";
 // @import "buttons";
 // @import 'transitions';
-@import "dropdown";
+// @import "dropdown";
 // @import "button-group";
 // @import "input-group";
 // @import "custom-forms";
@@ -26,7 +26,7 @@
 // @import 'navbar';
 // @import 'card';
 // @import 'breadcrumb';
-@import "pagination";
+// @import "pagination";
 // @import 'badge';
 // @import "jumbotron";
 // @import "alert";
@@ -35,7 +35,7 @@
 // @import 'list-group';
 // @import "close";
 // @import "toasts";
-@import "modal";
+// @import "modal";
 // @import "tooltip";
 // @import "popover";
 // @import 'carousel';

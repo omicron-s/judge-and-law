@@ -142,13 +142,48 @@ testWebP(function (support) {
     return svg4everybody;
 });
 
+
 $(document).ready(function () {
   $('.faq__item').on('click', function () {
-    $(this).find('p').slideToggle();
+    $(this).find('.faq__hidden').slideToggle();
     $(this).find('i').toggleClass('active');
   });
 });
 
+
+$(document).ready(function () {
+  var btn = $('#footer .scrollup');
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop() + $(window).height();
+    var footerOffset = $('#footer').offset().top + $('#footer').height();
+    var footerHeight = $('#footer').height();
+
+    if ($(window).width() >= 1440) {
+      footerOffset = footerOffset - footerHeight;
+    }
+
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+    if (scroll > $('#footer').offset().top - $('#footer').height()) {
+      btn.addClass('transition');
+    } else {
+      btn.removeClass('transition');
+    }
+
+    if (scroll > footerOffset) {
+      btn.addClass('absolute');
+    } else {
+      btn.removeClass('absolute');
+    }
+  });
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').scrollTop(0);
+  });
+});
 
 $('#header .header__nav--services').on('mouseenter', function () {
   $(this).find('li').removeAttr('class');

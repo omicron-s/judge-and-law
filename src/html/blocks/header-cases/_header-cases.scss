@@ -1,0 +1,23 @@
+.header-cases {
+  padding-bottom: 57px;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    width: 370px;
+    margin-top: 40px;
+  }
+
+  &__row {
+    @include col();
+    @include shift-left(3);
+    @include size(9);
+
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}

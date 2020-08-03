@@ -8,10 +8,10 @@
     font-display: swap;
   }
 }
+@import "../libs/bootstrap-4.5.0/scss/bootstrap";
+// @import "../libs/normalize";
 @import "fonts";
 @import "variables";
-@import "../libs/bootstrap-4.5.0/scss/bootstrap-reboot";
-@import "../../node_modules/tiny-slider/src/tiny-slider.scss";
 @import "smart-grid";
 @import "global";
 @import "../html/**/*";

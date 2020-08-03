@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "PT Serif", serif;
 }
@@ -12,12 +16,28 @@ a, button {
   transition: 0.4s;
 }
 
-a:hover {
+button {
+  cursor: pointer;
+}
+
+a, a:hover {
   text-decoration: none;
+}
+
+a:focus, input:focus, button:focus {
+  outline: none;
 }
 
 p, span {
   font-family: "PT Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -40,7 +60,6 @@ p, span {
   background-color: $beige;
   border: transparent;
   border-radius: 50px;
-  cursor: pointer;
 
   &:hover, &:active, &:focus {
     background-color: #fff;
@@ -49,6 +68,10 @@ p, span {
   &--blue {
     color: #fff;
     background-color: $blue;
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+    line-height: 3;
 
     &:hover, &:active, &:focus {
       color: darken(#fff, 10%);
@@ -78,8 +101,74 @@ h2.title-h3 {
   letter-spacing: 0.02em;
 }
 
-strong.title {
+b.title {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.05;
+}
+
+
+
+.pagination-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  height: 40px;
+  border: 1px solid $gray2;
+  border-radius: 20px;
+  margin-right: 5px;
+  padding: 0 15px;
+  background-color: #fff;
+  font-family: "PT Sans", sans-serif;
+
+  &:hover {
+    background-color: $gray2;
+  }
+
+  svg {
+    width: 10px;
+    height: 8px;
+    transform: rotate(90deg);
+  }
+
+  // i {
+  //   display: inline-block;
+  //   position: relative;
+  //   bottom: 6px;
+  //   width: 6px;
+  //   height: 1px;
+  //   transform: rotate(-45deg);
+  //   background-color: #000;
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 1px;
+  //     height: 6px;
+  //     background-color: #000;
+  //   }
+  // }
+  // .pagination--prev
+  &--prev {
+    margin-right: 10px;
+  }
+  // .pagination--page
+  &--page {
+    width: 40px;
+  }
+  // .pagination--next
+  &--next {
+    margin-left: 10px;
+    svg {
+      transform: rotate(270deg);
+    }
+    // i {
+    //   bottom: 2px;
+    //   transform: rotate(135deg);
+    // }
+  }
 }

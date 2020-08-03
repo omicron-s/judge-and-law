@@ -1,5 +1,21 @@
+@@if(context.client == true) {
 <div class="faq__item">
   <i></i>
-  <h4 class="title">@@quastion</h4>
-  @@for (var i = 0; i < answer.length; i++) { <p>`+answer[i]+`</p>}
+  <b class="title">Вопрос от клиента:</b>
+  <div class="faq__hidden">
+    <p>@@quastion</p>
+    <b class="title">Ответ:</b>
+    @@for (var i = 0; i < answer.length; i++) { <p> `+answer[i]+`</p>}
+  </div>
 </div>
+}
+
+@@if(context.client !== true) {
+<div class="faq__item">
+  <i></i>
+  <b class="title">@@quastion</b>
+  <div class="faq__hidden">
+    @@for (var i = 0; i < answer.length; i++) { <p> `+answer[i]+`</p>}
+  </div>
+</div>
+}

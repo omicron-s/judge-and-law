@@ -1,13 +1,14 @@
 .footer {
+  position: relative;
   padding: 22px 0 21px;
   color: #fff;
   font-size: 18px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 50%),
-    url("../img/footer/bg.webp");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.5) 30%, #000 40%), url("../img/footer/bg.webp");
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: left;
   background-blend-mode: multiply;
+  
   a:not(.logo) {
     color: #fff;
 
@@ -20,6 +21,12 @@
     align-self: center;
     grid-area: logo;
     justify-self: start;
+
+    .logo:hover {
+      color: $beige;
+      filter: drop-shadow(8px 8px 8px #000);
+      fill: darken($orange, 15%);
+    }
   }
 
   // .footer__row
@@ -88,13 +95,48 @@
 
   p.footer__bottom {
     grid-area: copy;
-    justify-self: end;
     margin: 0;
+    justify-self: end;
   }
 }
 
 .no-webp {
   .footer::before {
     background-image: url("../img/footer/bg.jpg");
+  }
+}
+
+.scrollup {
+  position: fixed;
+  right: 15px;
+  bottom: -60px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background-color: #fff;
+
+  svg {
+    width: 15px;
+    height: 12px;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: $gray2;
+  }
+
+  &.show {
+    bottom: 40px;
+  }
+
+  &.absolute {
+    position: absolute;
+    bottom: 287px;
+  }
+
+  &.transition {
+    transition: unset;
   }
 }
