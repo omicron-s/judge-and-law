@@ -8,3 +8,15 @@ $('#header .header__nav--services').on('mouseenter', function () {
       }, index * 40);
     });
 });
+
+var navbar = $('#header .navbar');
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  var headerHeight = $('#header').height();
+
+  if (scroll > headerHeight) {
+    navbar.addClass('fixed');
+  } else {
+    navbar.removeClass('fixed');
+  }
+});

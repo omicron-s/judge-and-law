@@ -1,0 +1,56 @@
+<div class="contacts-contacts">
+  <div class="container">
+    <div class="row">
+      <div class="contacts-contacts__left">
+        <ul>
+          <li>
+            @@include('../../mixins/_contacts-contacts.html', {
+            "svg": "marker",
+            "bold": "Наш адрес",
+            "text": "г.Москва, Институтский переулок, 2/1, офис 509"
+            })
+          </li>
+          <li>
+            @@include('../../mixins/_contacts-contacts.html', {
+            "svg": "clock",
+            "bold": "Время работы:",
+            "text": "с 11:00 до 18:00 Пн - Пт"
+            })
+          </li>
+          <li>
+            @@include('../../mixins/_contacts-contacts.html', {
+            "svg": "phone",
+            "bold": "Телефон:",
+            "text": "+7 (495) 681-12-17<br>+7 (916) 320-42-4"
+            })
+          </li>
+          <li>
+            <a href="mail:info@суд-да-правда.рф">@@include('../../mixins/_contacts-contacts.html', {
+              "svg": "mail",
+              "bold": "E-mail:",
+              "text": "info@суд-да-правда.рф"
+              })</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts-contacts__right">
+        @@include('../../blocks/form-contacts/_form-contacts.html')
+      </div>
+    </div>
+    <div class="row">
+      <div class="contacts-contacts__left">
+        <div class="contacts__map">
+          <div class="contacts__map-wrapper">
+            <script async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3cbc93446c2110b486823e1686f184754fd2dede77181a3f27b4293b264bf4f&amp;width=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-contacts__right img">
+        <div><img src="img/contacts/img-1.jpg" alt="Здание"></div>
+        <div><img src="img/contacts/img-2.jpg" alt="Офис"></div>
+      </div>
+    </div>
+  </div>
+</div>

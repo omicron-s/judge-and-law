@@ -1,5 +1,5 @@
 .header {
-  overflow: hidden;
+  min-height: 350px;
   padding: 10px 0 0;
   color: #fff;
   background-color: rgba(0, 59, 138, 0.9);
@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-burn;
+  background-position: center;
 
   .container {
     position: relative;
@@ -59,9 +60,9 @@
     align-items: center;
 
     svg {
-      margin-right: 20px;
       width: 10px;
       height: 15px;
+      margin-right: 20px;
     }
   }
 
@@ -71,9 +72,9 @@
     align-items: center;
     color: #fff;
     svg {
-      margin-right: 15px;
       width: 18px;
       height: 12px;
+      margin-right: 15px;
     }
 
     &:hover, &:focus, &:active {
@@ -93,9 +94,9 @@
     }
 
     svg {
-      margin-right: 14px;
       width: 14px;
       height: 14px;
+      margin-right: 14px;
     }
   }
 
@@ -157,10 +158,10 @@
     left: 0;
     width: 260px;
     padding: 15px 20px;
+    transition: .4s;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 20px 28px #5b5656;
-    transition: .4s;
 
     li {
       display: none;
@@ -192,3 +193,52 @@
 .no-webp .header {
   background-image: url("../img/header/bg.jpg");
 }
+
+//navbar
+.navbar {
+  position: fixed;
+  z-index: 100;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  transition: .4s;
+  background-color: $blue;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-wrapper {
+    width: unset;
+    margin: 0;
+  }
+  .logo {
+    width: 141px;
+    height: 56px;
+
+    padding: 0;
+
+    &__brand {
+      width: 141px;
+      margin-bottom: 0;
+    }
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: calc(65% - 30px);
+    margin: 0;
+    padding: 14px 0;
+  }
+  .btn {
+    width: 185px;
+    height: 35px;
+    margin-left: 35px;
+  }
+
+  &.fixed {
+    top: 0;
+  }
+}
+

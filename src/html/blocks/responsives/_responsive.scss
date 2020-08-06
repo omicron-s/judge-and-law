@@ -1,7 +1,12 @@
+.responsives {
+  padding: 40px 0;
+}
+
 .responsive {
   display: flex;
   justify-content: center;
   font-size: 14px;
+  
   // .responsive__avatar
   &__avatar {
     display: flex;

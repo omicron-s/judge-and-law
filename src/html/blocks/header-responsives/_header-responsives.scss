@@ -1,0 +1,7 @@
+.header-responsive {
+
+  &__row {
+    @include col();
+    @include shift-left(3);
+  }
+}

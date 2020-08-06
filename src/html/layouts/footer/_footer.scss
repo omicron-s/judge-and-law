@@ -107,6 +107,9 @@
 }
 
 .scrollup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   right: 15px;
   bottom: -60px;
@@ -133,10 +136,7 @@
 
   &.absolute {
     position: absolute;
-    bottom: 287px;
-  }
-
-  &.transition {
-    transition: unset;
+    top: -90px;
+    bottom: unset;
   }
 }

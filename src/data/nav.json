@@ -26,12 +26,12 @@
   },
   "Отзывы": {
     "class": "",
-    "link": "#",
+    "link": "otzyvy.html",
     "name": "Отзывы"
   },
   "Контакты": {
     "class": "",
-    "link": "#",
+    "link": "kontakty.html",
     "name": "Контакты"
   }
 }

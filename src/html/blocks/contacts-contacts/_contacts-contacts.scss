@@ -1,0 +1,138 @@
+.contacts-contacts {
+  padding: 40px 0;
+  // .contacts-contacts__left
+  .row {
+    @include row-flex();
+    &:first-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__left {
+    @include size(6);
+    @include col();
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      .cc-svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        transition: .4s;
+        margin-right: 40px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 50%;
+
+        svg {
+          width: 50%;
+          height: 50%;
+        }
+      }
+
+      b {
+        color: $blue;
+        font-family: "PT Sans", sans-serif;
+        transition: .4s;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #000;
+        display: flex;
+        align-items: center;
+
+        &:hover, &:active, &:focus {
+          color: $beige;
+
+          b {
+            color: $beige;
+          }
+
+          .cc-svg {
+            background-color: $beige;
+          }
+        }
+      }
+    }
+
+    // .contacts__map
+    .contacts__map {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .contacts-contacts__right
+  &__right {
+    @include size(6);
+    @include col();
+
+    .form {
+      // .form__title
+      &__title {
+        text-align-last: left;
+      }
+      // .form__form-wrapper
+      &__form-wrapper {
+        width: 100%;
+        margin: 0 0 15px;
+      }
+      // .form__text
+      &__text {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .free {
+      // .free__form
+      &__form {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      // .free__input
+      &__input {
+        width: calc(50% - 15px);
+        border: 1px solid #000;
+      }
+      // .free__span
+      &__span {
+        display: block;
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+      }
+    }
+
+    .btn {
+      width: calc(50% - 15px);
+    }
+
+    &.img {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        width: calc(50% - 15px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+  
