@@ -119,6 +119,9 @@
 
     .btn {
       width: calc(50% - 15px);
+      &:hover, &:active, &:focus {
+        background-color: $blue;
+      }
     }
 
     &.img {

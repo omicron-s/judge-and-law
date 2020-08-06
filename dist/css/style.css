@@ -752,6 +752,12 @@ b.title {
   width: calc(50% - 15px);
 }
 
+.contacts-contacts__right .btn:hover,
+.contacts-contacts__right .btn:active,
+.contacts-contacts__right .btn:focus {
+  background-color: #2961ad;
+}
+
 .contacts-contacts__right.img {
   display: -webkit-box;
   display: -ms-flexbox;
