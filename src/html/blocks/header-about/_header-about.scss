@@ -3,15 +3,29 @@
   z-index: 0;
   padding-bottom: 211px;
 
+  @media(max-width: 767px) {
+    padding-bottom: 40px;
+  }
+
   .title {
     position: relative;
     z-index: 1;
     margin-bottom: 30px;
+
+    @media(max-width: 767px) {
+      text-align: center;
+    }
   }
 
   .btn {
     width: 370px;
     margin-top: 40px;
+    
+    @media(max-width: 767px) {
+      display: block;
+      width: 250px;
+      margin: 40px auto 0;
+    }
   }
 
   &__row {
@@ -19,10 +33,25 @@
     @include shift-left(3);
     @include size(5);
 
+    @media(max-width: 1199px) {
+      @include shift-left(0);
+      @include size(8);
+    }
+    @media(max-width: 1023px) {
+      @include size(9);
+    }
+    @media(max-width: 767px) {
+      @include size(12);
+    }
+
     p {
       font-size: 14px;
       max-width: 440px;
       margin-bottom: 0;
+
+      @media(max-width: 767px) {
+        max-width: unset;
+      }
     }
   }
 

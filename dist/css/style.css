@@ -2714,6 +2714,11 @@ b.title {
 }
 
 @media (max-width: 1199px) {
+  .header-about__row {
+    margin-left: calc(0% + 15px);
+    width: calc(66.66667% - 30px);
+  }
+
   .header-main .title svg {
     display: none;
   }
@@ -2749,6 +2754,10 @@ b.title {
 }
 
 @media (max-width: 1023px) {
+  .header-about__row {
+    width: calc(75% - 30px);
+  }
+
   .header-main__row {
     width: calc(75% - 30px);
   }
@@ -2941,6 +2950,28 @@ b.title {
 
   .free__title {
     text-align: center;
+  }
+
+  .header-about {
+    padding-bottom: 40px;
+  }
+
+  .header-about .title {
+    text-align: center;
+  }
+
+  .header-about .btn {
+    display: block;
+    width: 250px;
+    margin: 40px auto 0;
+  }
+
+  .header-about__row {
+    width: calc(100% - 30px);
+  }
+
+  .header-about__row p {
+    max-width: unset;
   }
 
   .header-main {
