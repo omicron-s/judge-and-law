@@ -39,6 +39,9 @@
   }
   // .responsive__col-text
   &__col-text {
+    @media(max-width: 539px) {
+      margin-left: -93px;
+    }
   }
 }
   

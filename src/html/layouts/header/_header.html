@@ -14,7 +14,7 @@
       <button class="btn">Заказать звонок</button>
     </div>
   </div>
-  <div class="container">
+  <div class="container fixed">
     <div class="row">
       @@include('../../blocks/logo/_logo.html')
       <div class="header__row">
@@ -22,9 +22,21 @@
           @@include('../../mixins/_contacts-list.html', {
           "text": "г.Москва, Институтский пер., 2/1<br>Пн-Пт с 11.00 до 18.00"
           }')
+          <button class="btn-menu"><span></span></button>
         </div>
         <nav class="header__nav">
           @@loop('../../mixins/_nav-header.html', '../../data/nav.json')
+          <div class="header__top--in-menu">
+            <p>г.Москва, Институтский пер., 2/1<br>Пн-Пт с 11.00 до 18.00</p>
+            <a href="mailto:info@суд-да-правда.рф">
+              <p>
+                info@суд-да-правда.рф
+              </p>
+            </a>
+            <p>+7 (495) 681-12-17<br>
+              +7 (916) 320-42-42 </p>
+          </div>
         </nav>
       </div>
     </div>
+  </div>

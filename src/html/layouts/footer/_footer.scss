@@ -21,6 +21,9 @@
     align-self: center;
     grid-area: logo;
     justify-self: start;
+    @media(max-width: 1023px) {
+      display: none;
+    }
 
     .logo:hover {
       color: $beige;
@@ -38,6 +41,31 @@
       "logo poli poli copy";
     grid-template-rows: 28px auto auto;
     grid-template-columns: 32% 16% 27% auto;
+
+    @media(max-width: 1199px) {
+      grid-template-columns: 30% 16% 35% auto;
+    }
+
+    @media(max-width: 1023px) {
+      grid-template-areas:
+        "serv serv nav"
+        "list1 list2 nav"
+        "poli poli copy";
+      grid-template-columns: 30% 40% auto;
+    }
+    @media(max-width: 639px) {
+      grid-column-gap: 15px;
+    }
+    @media(max-width: 539px) {
+      grid-column-gap: 15px;
+      grid-template-areas:
+        "serv nav"
+        "list1 nav"
+        "list2 nav"
+        "poli copy";
+      grid-template-rows: 28px auto;
+      grid-template-columns: 60% auto;
+    }
   }
   // .footer__services
   &__services {
@@ -63,6 +91,11 @@
     &.list_2 {
       grid-area: list2;
       justify-self: flex-end;
+
+      @media(max-width: 539px) {
+        justify-self: flex-start;
+        padding: 0;
+      }
     }
   }
 
@@ -77,6 +110,9 @@
 
     a:first-child {
       display: none;
+    }
+    @media(max-width: 539px) {
+      font-size: 16px;
     }
   }
 
@@ -97,6 +133,18 @@
     grid-area: copy;
     margin: 0;
     justify-self: end;
+
+    @media(max-width: 1023px) {
+      margin-left: -25%;
+    }
+
+    @media(max-width: 767px) {
+      margin-left: -50%;
+    }
+    @media(max-width: 539px) {
+      margin-left: 0;
+      text-align: right;
+    }
   }
 }
 
@@ -132,11 +180,17 @@
 
   &.show {
     bottom: 40px;
+    @media(max-width: 639px) {
+      bottom: 15px;
+    }
   }
 
   &.absolute {
     position: absolute;
     top: -90px;
     bottom: unset;
+    @media(max-width: 639px) {
+      top: -65px;
+    }
   }
 }

@@ -7,10 +7,17 @@
   .logo-mini {
     top: -10px;
     fill: #fff;
+    @media(max-width: 1199px) {
+      top: 15px;
+    }
   }
   // .responsive-main__title
   &__title {
     margin-bottom: 80px;
+    
+    @media(max-width: 767px) {
+      margin-bottom: 40px;
+    }
   }
 }
   

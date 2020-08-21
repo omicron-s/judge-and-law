@@ -14,6 +14,29 @@
   text-align: center;
   fill: $beige;
 
+  @media(max-width:1023px) {
+    padding: 0;
+    &__brand {
+      margin-bottom: 0;
+    }
+    &__name {
+      display: none;
+    }
+    &__desc {
+      display: none;
+    }
+    &__footer {
+      display: none;
+    }
+  }
+
+  @media(max-width:767px) {
+    &__brand {
+      width: 142px;
+      height: 57px;
+    }
+  }
+
   // .logo__brand
   &__brand {
     margin-bottom: 10px;
@@ -35,8 +58,5 @@
     letter-spacing: 0.21em;
     text-transform: uppercase;
     user-select: none;
-  }
-  // .logo__footer
-  &__footer {
   }
 }
