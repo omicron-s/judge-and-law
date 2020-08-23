@@ -1,10 +1,16 @@
 .cases {
-  padding: 39px 15px;
+  padding: 40px 15px;
 
+  @media(max-width: 767px) {
+    padding: 40px 15px 0;
+  }
   // .services__card
   .services__card {
     grid-template-rows: auto auto 1fr 2fr auto;
     margin-bottom: 40px;
+    @media(max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
 }
 

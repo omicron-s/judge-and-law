@@ -11,7 +11,7 @@
   &__left {
     @include size(6);
     @include col();
-
+ 
     li {
       display: flex;
       align-items: center;
@@ -19,6 +19,7 @@
 
       .cc-svg {
         display: flex;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
         width: 40px;
@@ -68,11 +69,43 @@
       }
     }
 
+    @media(max-width: 1023px) {
+      @include size(5);
+    }
+
+    @media(max-width: 767px) {
+      @include size(12);
+      margin-bottom: 30px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+          align-items: flex-start;
+          width: calc(50% - 15px);
+          a {
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+    @media(max-width: 539px) {
+      ul {
+        li {
+          width: 100%;
+        }
+      }
+    }
+
     // .contacts__map
     .contacts__map {
       position: relative;
       width: 100%;
       height: 100%;
+
+      @media(max-width: 767px) {
+        height: 250px;
+      }
     }
   }
 
@@ -80,6 +113,14 @@
   &__right {
     @include size(6);
     @include col();
+
+    @media(max-width: 1023px) {
+      @include size(7);
+    }
+
+    @media(max-width: 767px) {
+      @include size(12);
+    }
 
     .form {
       // .form__title
@@ -95,6 +136,10 @@
       &__text {
         width: 100%;
         margin: 0;
+
+        @media(max-width: 767px) {
+          height: 100px;
+        }
       }
     }
 
@@ -103,17 +148,30 @@
       &__form {
         flex-direction: row;
         justify-content: space-between;
+
+        @media(max-width: 539px) {
+          flex-direction: column;
+        }
       }
       // .free__input
       &__input {
         width: calc(50% - 15px);
         border: 1px solid #000;
+
+        @media(max-width: 539px) {
+          width: 100%;
+        }
       }
       // .free__span
       &__span {
         display: block;
         width: calc(50% - 15px);
         margin-bottom: 20px;
+        padding: 0;
+
+        @media(max-width: 767px) {
+          width: 100%;
+        }
       }
     }
 
@@ -122,16 +180,27 @@
       &:hover, &:active, &:focus {
         background-color: $blue;
       }
+      @media(max-width: 767px) {
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+      }
     }
 
     &.img {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-
       div {
         width: calc(50% - 15px);
         img {
           width: 100%;
+        }
+        @media(max-width: 539px) {
+          width: 100%;
+          &:first-child {
+            margin-bottom: 30px;
+          }
         }
       }
     }

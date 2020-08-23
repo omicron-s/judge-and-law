@@ -180,7 +180,7 @@
 
   &.show {
     bottom: 40px;
-    @media(max-width: 639px) {
+    @media(max-width: 767px) {
       bottom: 15px;
     }
   }
@@ -189,7 +189,7 @@
     position: absolute;
     top: -90px;
     bottom: unset;
-    @media(max-width: 639px) {
+    @media(max-width: 767px) {
       top: -65px;
     }
   }

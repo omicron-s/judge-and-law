@@ -10,6 +10,11 @@
   background-blend-mode: color-burn;
   background-position: center;
 
+  @media(max-width: 767px) {
+    min-height: 200px;
+    padding: 105px 0 0;
+  }
+
   .container {
     position: relative;
 
@@ -21,8 +26,11 @@
         left: 0;
         width: 100%;
         padding: 4px 15px;
-        background-color: $blue;
-        box-shadow: 0 0 3px #000;
+        transition: .4s;
+        &.moved {
+          background-color: $blue;
+          box-shadow: 0 0 3px #000;
+        }
       }
     }
   }
@@ -34,7 +42,9 @@
     @media(max-width:1199px) {
       width: auto;
     }
-    
+    @media(max-width:539px) {
+      margin: 0 1.5vw 0 15px;
+    }
     .logo:hover {
       color: $beige;
       filter: drop-shadow(8px 8px 8px #000);
@@ -99,6 +109,10 @@
     @include col();
     @include size(9);
     flex-direction: column;
+
+    @media(max-width:539px) {
+      margin: 0 15px 0 1.5vw;
+    }
   }
 
   // .header__top
@@ -124,6 +138,12 @@
       }
       &--in-menu {
         display: block;
+      }
+    }
+
+    @media(max-width:539px) {
+      svg {
+        margin-right: 5px;
       }
     }
 
@@ -279,24 +299,27 @@
     }
 
     @media(max-width:767px) {
-      flex-direction: column;
       position: absolute;
       z-index: 0;
       top: 65px;
       left: -200%;
       width: 280px;
+      max-height: calc(100vh - 100%); //высота навбара
       border: 1px solid #fff;
       padding: 0 15px;
-      background-color: #fff;
       transition: .4s cubic-bezier(0.63, -0.29, 0.13, 0.99);
+      background-color: #fff;
       margin-bottom: 0;
       margin-left: 0;
+      box-shadow: 3px 3px 3px -3px #000;
+      overflow-y: auto;
 
       >a, .header__nav--services {
+        flex: 1 1 100%;
+        transition: none;
         color: #000;
         background-color: $beige;
         border-radius: 0;
-        transition: none;
 
         &:not(:last-child) {
           border-bottom: 1px solid #fff;
@@ -438,6 +461,9 @@
   background-color: $blue;
   box-shadow: 0 0 3px #000;
 
+  @media(max-width: 767px) {
+    display: none;
+  }
   .container {
     display: flex;
     align-items: center;

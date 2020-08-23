@@ -1,11 +1,25 @@
 .service-family {
   padding: 35px 0 20px;
-  .row {
-    @include row-flex();
+
+  @media(max-width: 767px) {
+    padding: 35px 0 0;
   }
+
+  .row {
+    margin: 0 -15px;
+  }
+
   .logo-wrapper {
     @include col();
     @include size(3);
+
+    @media(max-width: 1199px) {
+      width: auto;
+    }
+
+    @media(max-width: 767px) {
+      display: none;
+    }
 
     .logo {
       color: #000;
@@ -16,6 +30,10 @@
     @include col();
     @include size(9);
     font-size: 14px;
+
+    @media(max-width: 767px) {
+      @include size(12);
+    }
   }
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var btn = $('#footer .scrollup');
   $(window).scroll(function () {
-    var scroll = $(window).scrollTop() + $(window).height();
+    var scroll = $(window).scrollTop() + window.innerHeight;
     var footerOffset = $('#footer').offset().top;
 
     if ($(window).scrollTop() > 300) {

@@ -1,6 +1,10 @@
 .header-cases {
   padding-bottom: 57px;
 
+  @media(max-width: 767px) {
+    padding-bottom: 40px;
+  }
+
   .title {
     margin-bottom: 30px;
   }
@@ -8,12 +12,26 @@
   .btn {
     width: 370px;
     margin-top: 40px;
+    
+    @media(max-width: 767px) {
+      display: block;
+      width: 250px;
+      margin: 40px auto 0;
+    }
   }
 
   &__row {
     @include col();
     @include shift-left(3);
     @include size(9);
+
+    @media(max-width: 1023px) {
+      @include shift-left(0);
+      @include size(9);
+    }
+    @media(max-width: 767px) {
+      @include size(12);
+    }
 
     p {
       font-size: 14px;

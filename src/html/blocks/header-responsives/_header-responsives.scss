@@ -1,7 +1,11 @@
-.header-responsive {
+.header-responsives {
 
   &__row {
     @include col();
     @include shift-left(3);
+
+    @media(max-width: 1023px) {
+      @include shift-left(0);
+    }
   }
 }

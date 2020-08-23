@@ -3,6 +3,7 @@
 
   .row {
     @include row-flex();
+    position: relative;
   }
   // .deal__img
   &__img {
@@ -13,7 +14,12 @@
       width: 100%;
       filter: saturate(0);
     }
+
+    @media(max-width: 767px) {
+      display: none;
+    }
   }
+  
   // .deal__text
   &__text {
     @include col();
@@ -30,6 +36,10 @@
         transform: rotate(90deg);
         margin-right: 12px;
       }
+    }
+
+    @media(max-width: 767px) {
+      @include size(12);
     }
   }
 }

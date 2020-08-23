@@ -4,6 +4,9 @@ html {
 
 body {
   font-family: "PT Serif", serif;
+  &.overflow {
+    overflow: hidden;
+  }
 }
 
 ul {
@@ -136,13 +139,32 @@ b.title {
 }
 
 .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   border: 1px solid $gray2;
   border-radius: 20px;
   margin-right: 5px;
-  padding: 0 15px;
   background-color: #fff;
   font-family: "PT Sans", sans-serif;
+
+  &:not(.pagination--page) {
+    padding: 0 15px;
+    line-height: 1;
+  }
+
+  @media(max-width: 767px) {
+    width: 40px;
+
+    &:not(.pagination--page) {
+      padding: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+
 
   &:hover {
     background-color: $gray2;
@@ -154,28 +176,12 @@ b.title {
     transform: rotate(90deg);
   }
 
-  // i {
-  //   display: inline-block;
-  //   position: relative;
-  //   bottom: 6px;
-  //   width: 6px;
-  //   height: 1px;
-  //   transform: rotate(-45deg);
-  //   background-color: #000;
-
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 1px;
-  //     height: 6px;
-  //     background-color: #000;
-  //   }
-  // }
   // .pagination--prev
   &--prev {
-    margin-right: 10px;
+    margin: 0 10px 0 0;
+    span {
+      margin-left: 5px;
+    }
   }
   // .pagination--page
   &--page {
@@ -183,13 +189,12 @@ b.title {
   }
   // .pagination--next
   &--next {
-    margin-left: 10px;
+    margin: 0 0 0 5px;
+    span {
+      margin-right: 5px;
+    }
     svg {
       transform: rotate(270deg);
     }
-    // i {
-    //   bottom: 2px;
-    //   transform: rotate(135deg);
-    // }
   }
 }

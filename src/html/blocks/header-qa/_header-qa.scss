@@ -3,5 +3,10 @@
   &__row {
     @include col();
     @include shift-left(3);
+
+    @media(max-width: 1023px) {
+      @include size(12);
+      @include shift-left(0);
+    }
   }
 }

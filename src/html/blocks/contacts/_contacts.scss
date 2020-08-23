@@ -100,7 +100,7 @@
     width: 50%;
 
     @media(max-width: 767px) {
-      width: 100%;
+      width: calc(100% - 30px);
       height: 250px;
     }
   }

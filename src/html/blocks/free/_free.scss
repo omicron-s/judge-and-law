@@ -51,6 +51,10 @@
     &::placeholder {
       color: #000;
     }
+
+    @media(max-width: 767px) {
+      padding-left: 15px;
+    }
   }
   // .free__span
   &__span {
