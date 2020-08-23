@@ -1,3 +1,4 @@
+@@include('../../blocks/modal/_modal.html')
 <header id="header" class="header">
   <div class="navbar">
     <div class="container">
@@ -11,7 +12,7 @@
       <nav class="header__nav">
         @@loop('../../mixins/_nav-header.html', '../../data/nav.json')
       </nav>
-      <button class="btn">Заказать звонок</button>
+      <button class="btn btn-modal">Заказать звонок</button>
     </div>
   </div>
   <div class="container fixed">

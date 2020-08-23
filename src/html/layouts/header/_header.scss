@@ -314,22 +314,6 @@
       box-shadow: 3px 3px 3px -3px #000;
       overflow-y: auto;
 
-      >a, .header__nav--services {
-        flex: 1 1 100%;
-        transition: none;
-        color: #000;
-        background-color: $beige;
-        border-radius: 0;
-
-        &:not(:last-child) {
-          border-bottom: 1px solid #fff;
-        }
-
-        &:hover, &:focus, &:active {
-          background-color: $beige;
-        }
-      }
-
       &--services {
         display: flex;
         flex-wrap: wrap;
@@ -348,6 +332,22 @@
         }
       }
 
+      >a, .header__nav--services {
+        flex: 1 1 100%;
+        transition: none;
+        color: #000;
+        background-color: $beige;
+        border-radius: 0;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #fff;
+        }
+
+        &:hover, &:focus, &:active {
+          background-color: $beige;
+        }
+      }
+
       &.slide {
         left: 0;
       }
@@ -355,6 +355,7 @@
 
     &--services {
       position: relative;
+      outline: none;
       
       @media(min-width:768px) {
         &:hover {
@@ -362,7 +363,6 @@
           .header__dropdown {
             display: block;
           }
-
           &::before {
             content: "";
             position: absolute;
